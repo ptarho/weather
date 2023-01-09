@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p class="header__text">Welcome to the Weather App</p>
+            <form class="form" action="">
+                <input type="text" class="form__input" placeholder="Enter your city...">
+                <button class="form__searchBtn" type="submit">
+                    <img class="btnImg"src="src/search-icon-white.png" alt="">
+                </button>
+            </form>
+        </div>
+        <div class="weather loading">
+            <div class="weather__header">
+                    <img class="weather__img" src="" alt="">
+                    <div class="weather__header-temp">61℉|16℃</div>
+            </div>
+            <div class="weather__header-city">Paris, FR</div>
+            <div class="weather__prop">
+                <div class="weather__prop-item prop-left">
+                    <prop class="wind">Wind: 2.1 mph</prop>
+                    <prop class="humidity">Humidity: 77%</prop>
+                </div>
+                <div class="weather__prop-item prop-right">
+                    <prop class="dayTime">Thursday 20:19</prop>
+                    <prop class="description">Light Rain</prop>
+                </div>
+            </div>
+
+            <div class="weather__table">
+                <table class="table">
+                    <tr class="table__header">
+                        <th class="empty"></th>
+                        <th class="th__day">31/08</th>
+                        <th class="th__day">01/09</th>
+                        <th class="th__day">02/09</th>
+                        <th class="th__day">03/09</th>
+                        <th class="th__day">04/09</th>
+                    </tr>
+                    <tr class="table__min">
+                        <td class="td__bold td">Min</td>
+                        <td class="td td__min">56 F</td>
+                        <td class="td td__min">56 F</td>
+                        <td class="td td__min">56 F</td>
+                        <td class="td td__min">56 F</td>
+                        <td class="td td__min">56 F</td>
+                    </tr>
+                    <tr class="table__max">
+                        <td class="td__bold td">Max</td>
+                        <td class="td td__max">56 F</td>
+                        <td class="td td__max">56 F</td>
+                        <td class="td td__max">56 F</td>
+                        <td class="td td__max">56 F</td>
+                        <td class="td td__max">56 F</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        
+        <!-- <div class="city"></div>
+        <div class="temp"></div>
+        <div class="wind"></div>
+        <div class="description"></div>
+        <div class="forecast">
+            <div class="forecast__day"></div>
+            <div class="forecast__temp"></div>
+            <div class="forecast__wind"></div>
+        </div> -->
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
