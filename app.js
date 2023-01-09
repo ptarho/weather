@@ -151,5 +151,6 @@ const form = document.querySelector(".form");
 form.addEventListener("submit", function (e) {
     e.preventDefault();
     if (textField.value == "") return;
+    api.request(textField.value);
     api.forecast(textField.value);
 });
