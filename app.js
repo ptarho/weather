@@ -51,10 +51,10 @@ class Weather {
         data.list.forEach((el) => {
             //iterate over every timestamp
             let date = new Date(el.dt_txt);
-            let day = date.getDate();
-            let month = date.getMonth() + 1;
+            let day = `0${date.getDate() + 1}`;
+            let month = `0${date.getMonth() + 1}`;
 
-            let forecastDate = `${day}/${month}`; //date of current timestamp
+            let forecastDate = `${day.slice(-2)}/${month.slice(-2)}`; //date of current timestamp
 
             //if days arr don`t have obj of that day create new and push it
             if (!days.find((e) => e.date === forecastDate) && days.length < 5) {
