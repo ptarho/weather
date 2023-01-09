@@ -142,3 +142,26 @@ body{
 .th__day{
     padding: 8px;
 }
+@media only screen and (max-width: 600px) {
+    .header__text{
+        font-size: 1.6rem;
+    }
+    .weather{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15%;
+    }
+    .weather__prop-item{
+        margin-left: auto;
+    }
+    .table{
+        font-size: 1rem;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .empty, .td__bold{
+        display: none;
+    }
+  }
