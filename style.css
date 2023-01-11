@@ -179,4 +179,15 @@ body {
     .td__bold {
         display: none;
     }
+    .weather__header {
+        position: relative;
+    }
+    .weather__img {
+        margin: 5px 20px;
+    }
+    .weather__header-temp {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
 }
